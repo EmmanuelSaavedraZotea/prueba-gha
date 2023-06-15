@@ -42,5 +42,5 @@ jobs:
           context: .
           file: docker/dockerfile/hello-world/Dockerfile
           push: ${{ github.ref_type == 'tag' }}
-          tags: ghcr.io/EmmanuelSaavedraZotea/hello-world:latest 
+          tags: ghcr.io/emmanuelsaavedrazotea/hello-world:latest 
           labels: ${{ steps.meta.outputs.labels }}
