@@ -44,3 +44,4 @@ jobs:
           push: ${{ github.ref_type == 'tag' }}
           tags: ghcr.io/emmanuelsaavedrazotea/hello-world:latest 
           labels: ${{ steps.meta.outputs.labels }}
+
