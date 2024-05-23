@@ -21,7 +21,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/EmmanuelSaavedraZotea/hello-worldfinal
+          images: ghcr.io/EmmanuelSaavedraZotea/hello-worldfinal1
           flavor: latest=true
           tags: |
             type=ref,event=branch
@@ -42,7 +42,7 @@ jobs:
           context: .
           file: docker/dockerfile/hello-world/Dockerfile
           push: ${{ github.ref_type == 'tag' }}
-          tags: ghcr.io/emmanuelsaavedrazotea/hello-worldfinal:latest 
+          tags: ghcr.io/emmanuelsaavedrazotea/hello-worldfinal1:latest 
           labels: ${{ steps.meta.outputs.labels }}
 
 
